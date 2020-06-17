@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: shapi
+Version: 0.1.0
+Summary: A python client to interact with Software Herritage API
+Home-page: https://github.com/rahulunair/shapi.git
+Author: rahulunair
+Author-email: rahulunair@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7,<4.0

@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "shapi"
+version = "0.1.0"
+description = "A python client to interact with Software Herritage API"
+repository = "https://github.com/rahulunair/shapi.git"
+authors = ["rahulunair <rahulunair@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^7.1.2"
+requests = "^2.24.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+shapi = "shapi.console:cli"
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
