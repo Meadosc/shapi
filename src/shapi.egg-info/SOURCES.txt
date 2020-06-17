@@ -1,9 +1,0 @@
-setup.py
-src/shapi/__init__.py
-src/shapi/console.py
-src/shapi.egg-info/PKG-INFO
-src/shapi.egg-info/SOURCES.txt
-src/shapi.egg-info/dependency_links.txt
-src/shapi.egg-info/entry_points.txt
-src/shapi.egg-info/requires.txt
-src/shapi.egg-info/top_level.txt

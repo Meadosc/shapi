@@ -1,3 +1,0 @@
-[console_scripts]
-shapi = shapi.console:cli
-
