@@ -15,7 +15,8 @@ shapi --help
 
 - Check if a repo is already archived and get the latest snapshot URI
 
-```shapi check <repo_tool> <uri>
+```bash
+shapi check <repo_tool> <uri>
 ```
 
 ### Example
