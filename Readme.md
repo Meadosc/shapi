@@ -18,8 +18,7 @@ Usage: shapi [OPTIONS] COMMAND [ARGS]...
 
   SHApi - Software Heritage(SH) API.
 
-  A Python client to interact with software heritage API to query for an
-  object, upload new pkgs to the repo.
+  A Python client to interact with software heritage API to query for an archived repo, submit request to archive a new repo.
 
 Options:
   --version  Show the version and exit.
