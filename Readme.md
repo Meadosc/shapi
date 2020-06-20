@@ -1,5 +1,9 @@
 ## SHApi - Software Herritage API client
 
+<p align="center">
+  <img src="docs/images/shapi.jpeg" alt="himalayan_thar" width="300" height="300"/>
+</p>
+
 A python client to call the software heritage API to query for:
 
 - archived repos
