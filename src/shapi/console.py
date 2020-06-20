@@ -1,8 +1,9 @@
 """CLI entrypoint to shapi."""
 import click
+
 from . import __version__
 
-# from  .client import client
+from  client import SHClient
 
 
 @click.group()
@@ -19,7 +20,7 @@ def cli() -> None:
 @cli.argument("hash", type=str)
 def check(hash: str) -> None:
     """Check if a package is available using its hash.
-    
+
     The hash can be sha1 or sha2."""
     """
     res: dict = client.check(hash)
