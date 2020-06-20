@@ -1,8 +1,8 @@
 """client bindings to query software heritage API."""
-from functools import lru_cache
 import logging
 import os
 import sys
+from functools import lru_cache
 
 import requests
 from requests.utils import quote
@@ -10,10 +10,11 @@ from requests.utils import quote
 logger = logging.getLogger("SHClient")
 logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
 
+
 class SHClient:
-    
+
     URL = "https://archive.softwareheritage.org/api/1/"
-    
+
     def __init__(self, rate_limit=None):
         self.rate_limit = rate_limit
         self.session = self._init_session()
@@ -42,7 +43,7 @@ class SHClient:
             method=method, url=url, params=params, data=data, headers=headers
         )
         return req
-    
+
     @lru_cache()
     def query(self, method, path, params=None, data=None, headers=None):
         req = self._send_request(method, path)

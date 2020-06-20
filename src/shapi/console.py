@@ -8,6 +8,7 @@ from .client import SHClient
 
 sh_client = SHClient()
 
+
 @click.group()
 @click.version_option(version=__version__)
 def cli() -> None:
@@ -33,7 +34,7 @@ def check(url: str) -> None:
         url: repo url to check, eg: https://github.com/tensorflow/tensorflow
     """
     url = _origin_check(url)
-    #TODO (unrahul): cache
+    # TODO (unrahul): cache
     resp = sh_client.query("GET", url)
     print("=" * 71)
     print("Archive found")
