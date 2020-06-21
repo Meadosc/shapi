@@ -1,8 +1,9 @@
 ## SHApi - Software Herritage API client
 
-<p align="center">
+<figure align="center">
   <img src="docs/images/shapi.jpeg" alt="himalayan_thar" width="300" height="300"/>
-</p>
+  <figcaption align="center">Himalayan Thar</figcaption>
+</figure>
 
 A python client to query Software Heritage API for:
 
