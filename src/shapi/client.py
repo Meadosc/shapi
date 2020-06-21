@@ -26,14 +26,15 @@ class SHClient:
         return self.URL + quote(path)
 
     def _handle_response(self, response):
-        if response.status_code == 404:
-            logger.error("API call triggered a bad request")
+        if response.status_code == 429:
+            logger.error("API request throttled, try again later.")
             sys.exit(1)
+        elif response.status_code == 404:
+            logger.error("API call triggered a bad request")
         elif response.status_code == 301:
             logger.error("API URL moved, check the URL")
             sys.exit(1)
-        else:
-            return response
+        return response
 
     def _send_request(
         self, method: str, path: str, params: str = None, data=None, headers=None
