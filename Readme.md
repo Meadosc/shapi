@@ -4,7 +4,7 @@
   <img src="docs/images/shapi.jpeg" alt="himalayan_thar" width="300" height="300"/>
 </p>
 
-A python client to query software heritage API for:
+A python client to query Software Heritage API for:
 
 - archived repo
 - submit request to archive repo
