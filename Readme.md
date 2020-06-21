@@ -11,22 +11,22 @@ A python client to query Software Heritage API for:
 
 ### Usage
 
-```bash
-shapi --help
-
+```python
 Usage: shapi [OPTIONS] COMMAND [ARGS]...
 
   SHApi - Software Heritage(SH) API.
 
-  A Python client to interact with software heritage API to query for an archived repo, submit request to archive a new repo.
+  A Python client to interact with software heritage API to query for an
+  object, upload new pkgs to the repo.
 
 Options:
   --version  Show the version and exit.
   --help     Show this message and exit.
 
 Commands:
-  check  Check if a repo url is archived in SH.
-
+  check         Check if a repo url is archived in SH.
+  status_check  API Health check.
+  submit        Submit a repo to be archived in SH.
 ```
 
 #### Available commands
@@ -40,9 +40,18 @@ shapi check <uri>
 ### Example
 
 ```bash
-shapi check https://github.com/tensorflow/tensorflow
+shapi status_check
 ```
 
+```python
+=======================================================================
+SH API is alive and kicking.
+=======================================================================
+```
+
+```bash
+shapi check https://github.com/tensorflow/tensorflow
+```
 
 ```python
 =======================================================================
@@ -50,5 +59,17 @@ Archive found
 Date: 2020-01-30T12:48:13.162613+00:00
 Src URL: https://github.com/tensorflow/tensorflow
 Archive URL: https://archive.softwareheritage.org/api/1/snapshot/50a5123ba58a352be71a143446e2021c8f0471c9/
+=======================================================================
+```
+
+```bash
+shapi submit git https://github.com/tensorflow/tensorflow
+```
+
+```python
+=======================================================================
+Date: 2020-06-21T17:21:26.152749+00:00
+Src URL: https://github.com/tensorflow/tensorflow
+Save status: accepted
 =======================================================================
 ```
