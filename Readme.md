@@ -9,6 +9,12 @@ A python client to query Software Heritage API for:
 - archived repo
 - submit request to archive repo
 
+### Install SHApi
+
+```bash
+git clone https://github.com/rahulunair/shapi && cd shapi && pip install .
+```
+
 ### Usage
 
 ```python
