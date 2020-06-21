@@ -35,7 +35,7 @@ Commands:
   submit        Submit a repo to be archived in SH.
 ```
 
-#### Available commands
+### Available commands
 
 - Check if the API is alive.
 
@@ -55,7 +55,7 @@ shapi check <url>
 shapi submit <version_control_tool> <uri>
 ```
 
-### Examples
+#### Examples
 
 ```bash
 shapi status_check
