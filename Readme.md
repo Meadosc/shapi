@@ -40,10 +40,12 @@ Commands:
 - Check if a repo is already archived and get the latest snapshot URI
 
 ```bash
+shapi status_check
 shapi check <uri>
+shapi submit <version_control_tool> <uri>
 ```
 
-### Example
+### Examples
 
 ```bash
 shapi status_check
