@@ -37,11 +37,21 @@ Commands:
 
 #### Available commands
 
-- Check if a repo is already archived and get the latest snapshot URI
+- Check if the API is alive.
 
 ```bash
 shapi status_check
-shapi check <uri>
+```
+
+- Check if a repo is already archived and get the latest snapshot URI
+
+```bash
+shapi check <url>
+```
+
+- Submit a repo to be archived by Software Heritage.
+
+```bash
 shapi submit <version_control_tool> <uri>
 ```
 
