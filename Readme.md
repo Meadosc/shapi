@@ -12,7 +12,7 @@ A python client to query Software Heritage API for:
 ### Install SHApi
 
 ```bash
-git clone https://github.com/rahulunair/shapi && cd shapi && pip install .
+git clone https://github.com/rahulunair/shapi && cd shapi && poetry install
 ```
 
 ### Usage
